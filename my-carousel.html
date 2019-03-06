@@ -1,0 +1,30 @@
+
+<div class="my-carousel">
+  <div class="carousel-container">
+    <div class="carousel-tile carosuse" ng-repeat="img in vm.imageUrls">
+      <img ng-src="{{img}}"> 
+    </div>
+  </div>
+  <div class="btn-container" style="text-align: center;">
+    <button type="button" class="btn btn-link btn-left prev">
+      <
+    </button>
+    <button type="button" class="btn btn-link btn-right next">
+      >
+    </button>
+  </div>
+  
+</div>
+<!-- <div id="dynamiccontentcarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+    <ol class="carousel-indicators">
+        <li data-target="#dynamiccontentcarousel" data-ng-repeat="img in images" data-ng-class="{active : $first}" data-slide-to="{{$index}}"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item" data-ng-repeat="image in images" data-ng-class="{active : $first}">
+            <img data-ng-src="{{image}}" alt=" carousel {{$index}}" />
+        </div>
+    </div>
+</div> -->
+
