@@ -1,8 +1,9 @@
 
 <div class="my-carousel">
   <div class="carousel-container">
-    <div class="carousel-tile carosuse" ng-repeat="img in vm.imageUrls">
-      <img ng-src="{{img}}"> 
+    <div class="carousel-tile carosuse" ng-repeat="img in vm.imageUrls" >
+      <div class="carousel-caption"></div>
+      <img ng-src="{{img}}"> Dog{{$index+1}}
     </div>
   </div>
   <div class="btn-container" style="text-align: center;">
@@ -12,6 +13,17 @@
     <button type="button" class="btn btn-link btn-right next">
       >
     </button>
+    
+    <ol class="carousel-indicators">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+
+      </ol>
   </div>
   
 </div>
